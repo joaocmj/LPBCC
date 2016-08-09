@@ -15,20 +15,31 @@
     <form id="form1" runat="server">
     <div style="font-size: x-large">
     
-        <span class="auto-style1">Exemplo Copiar Colar<br />
+        <span class="auto-style1"><strong>Exemplo Copiar Colar<br />
         <br />
-        Copiar </span>
+        Copiar </strong> </span>
+        <strong>
         <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style1"></asp:TextBox>
         <br class="auto-style1" />
-        <span class="auto-style1">Colar </span>
+        </strong>
+        <span class="auto-style1"><strong>Colar </strong> </span>
+        <strong>
         <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style1"></asp:TextBox>
+        </strong>
         <span class="auto-style1">
+        <strong>
         <br />
         <br />
+        </strong>
         </span>
+        <strong>
         <asp:Button ID="Button1" runat="server" CssClass="auto-style1" OnClick="Button1_Click" Text="Copiar" />
-        <span class="auto-style1">&nbsp; </span>
+        </strong>
+        <span class="auto-style1"><strong>&nbsp; </strong> </span>
+        <strong>
         <asp:Button ID="Button2" runat="server" CssClass="auto-style1" OnClick="Button2_Click" Text="Colar" />
+    
+        </strong>
     
     </div>
     </form>

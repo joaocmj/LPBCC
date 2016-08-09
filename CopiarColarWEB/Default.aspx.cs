@@ -18,6 +18,7 @@ public partial class _Default : System.Web.UI.Page
     {
         // var1 = TextBox1.Text;
         Session["var1"] = TextBox1.Text; 
+        //dfgsdfgsdfgsdfg
         TextBox1.Text = ""; 
     }
 
