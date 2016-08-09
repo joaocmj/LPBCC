@@ -1,0 +1,9 @@
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\bin\Debug\CopiarColarWFA.exe.config
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\bin\Debug\CopiarColarWFA.exe
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\bin\Debug\CopiarColarWFA.pdb
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\obj\Debug\CopiarColarWFA.csprojResolveAssemblyReference.cache
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\obj\Debug\CopiarColarWFA.Form1.resources
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\obj\Debug\CopiarColarWFA.Properties.Resources.resources
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\obj\Debug\CopiarColarWFA.csproj.GenerateResource.Cache
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\obj\Debug\CopiarColarWFA.exe
+D:\Aulas_2016\LPBCC\Aulas\WebForm\CopiarColarWFA\CopiarColarWFA\obj\Debug\CopiarColarWFA.pdb
