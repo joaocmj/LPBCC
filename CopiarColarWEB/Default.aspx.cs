@@ -11,7 +11,8 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Application["Contador"] = Convert.ToInt32(Application["Contador"]) + 1;
+        Label1.Text = Application["Contador"].ToString(); 
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -21,7 +22,7 @@ public partial class _Default : System.Web.UI.Page
         //Cache["var1"] = TextBox1.Text; 
         //ViewState["var1"] = TextBox1.Text; 
         Response.Cookies["var1"].Value = TextBox1.Text;
-        Response.Cookies["var1"].Expires = DateTime.Now.AddDays(30); 
+        //Response.Cookies["var1"].Expires = DateTime.Now.AddDays(30); 
         TextBox1.Text = ""; 
     }
 

@@ -32,6 +32,10 @@
         <b>
         <br />
         <br />
+        Total de Acessos:
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
         </b>
         </span>
         <asp:Button ID="Button1" runat="server" CssClass="auto-style2" OnClick="Button1_Click" Text="Copiar" />

@@ -31,5 +31,10 @@ namespace CopiarColarWFA
             
             textBox2.Text = var1; 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
