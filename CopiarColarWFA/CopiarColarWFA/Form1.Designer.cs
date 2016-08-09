@@ -40,7 +40,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 56);
+            this.label1.Location = new System.Drawing.Point(23, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 29);
             this.label1.TabIndex = 0;
@@ -50,7 +51,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 113);
+            this.label2.Location = new System.Drawing.Point(26, 92);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 29);
             this.label2.TabIndex = 1;
@@ -59,25 +61,28 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(141, 51);
+            this.textBox1.Location = new System.Drawing.Point(135, 41);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(381, 34);
+            this.textBox1.Size = new System.Drawing.Size(287, 34);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(141, 108);
+            this.textBox2.Location = new System.Drawing.Point(135, 89);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(381, 34);
+            this.textBox2.Size = new System.Drawing.Size(287, 34);
             this.textBox2.TabIndex = 3;
             // 
             // btnCopiar
             // 
             this.btnCopiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCopiar.Location = new System.Drawing.Point(39, 216);
+            this.btnCopiar.Location = new System.Drawing.Point(29, 176);
+            this.btnCopiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCopiar.Name = "btnCopiar";
-            this.btnCopiar.Size = new System.Drawing.Size(108, 42);
+            this.btnCopiar.Size = new System.Drawing.Size(81, 34);
             this.btnCopiar.TabIndex = 4;
             this.btnCopiar.Text = "Copiar";
             this.btnCopiar.UseVisualStyleBackColor = true;
@@ -86,9 +91,10 @@
             // btnColar
             // 
             this.btnColar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnColar.Location = new System.Drawing.Point(180, 216);
+            this.btnColar.Location = new System.Drawing.Point(135, 176);
+            this.btnColar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnColar.Name = "btnColar";
-            this.btnColar.Size = new System.Drawing.Size(123, 42);
+            this.btnColar.Size = new System.Drawing.Size(92, 34);
             this.btnColar.TabIndex = 5;
             this.btnColar.Text = "Colar";
             this.btnColar.UseVisualStyleBackColor = true;
@@ -96,15 +102,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 320);
+            this.ClientSize = new System.Drawing.Size(489, 260);
             this.Controls.Add(this.btnColar);
             this.Controls.Add(this.btnCopiar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
