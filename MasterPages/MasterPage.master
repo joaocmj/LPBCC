@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 1114px;
+            margin-bottom: 0px;
+        }
+        .auto-style6 {
+            height: 49px;
+            text-align: center;
+        }
+        .auto-style7 {
+            width: 134px;
+            height: 954px;
+        }
+        .auto-style8 {
+            width: 1051px;
+            height: 954px;
+            top: auto;
+            right: auto;
+            table-layout: auto;
+        }
+        .auto-style9 {
+            height: 954px;
+        }
+        .auto-style12 {
+            height: 120px;
+            text-align: center;
+        }
+        .auto-style13 {
+            height: 76px;
+            text-align: center;
+            font-size: xx-large;
+            color: #0066FF;
+        }
+        .auto-style14 {
+            width: 198px;
+            height: 117px;
+        }
+        .auto-style15 {
+            height: 55px;
+            font-size: xx-large;
+            color: #0066FF;
+        }
+        .auto-style16 {
+            font-size: large;
+        }
+        .auto-style17 {
+            height: 49px;
+            text-align: center;
+            width: 315px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <table cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td class="auto-style13" colspan="3" style="background-color: #FFFF99"><strong>Sistema Exemplo Master Pages</strong></td>
+                <td class="auto-style12" rowspan="2">
+                    <img alt="" class="auto-style14" src="logoHp.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style15" colspan="3" style="background-color: #FFFF99">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Large" ForeColor="#990000" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home">
+                                <asp:MenuItem Text="New Item" Value="New Item"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Notebooks" Value="Notebooks">
+                                <asp:MenuItem NavigateUrl="~/Dell.aspx" Text="Dell" Value="Dell"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style7"  style=" background-color: #99CCFF">
+                    <asp:Calendar ID="Calendar1" runat="server" Height="170px" Width="129px"></asp:Calendar>
+                    <asp:Menu ID="Menu2" runat="server" BackColor="#F7F6F3" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Large" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#F7F6F3" />
+                        <DynamicSelectedStyle BackColor="#5D7B9D" />
+                        <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#5D7B9D" />
+                    </asp:Menu>
+                </td>
+                <td class="auto-style8" style=" clip: rect(auto, auto, auto, auto);  vertical-align:top" colspan="2">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style9" style="background-color: #6699FF">
+                    <asp:TreeView ID="TreeView1" runat="server" CssClass="auto-style16" DataSourceID="SiteMapDataSource1" Height="398px" ImageSet="Contacts" NodeIndent="10" Width="227px">
+                        <HoverNodeStyle Font-Underline="False" />
+                        <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                        <ParentNodeStyle Font-Bold="True" ForeColor="#5555DD" />
+                        <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                    </asp:TreeView>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style17" colspan="2" style="background-color: #FFCC99">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                    <strong>Desenvolvido por Camolesi @2016</strong></td>
+                <td class="auto-style6" colspan="2" style="background-color: #FFCC99">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
