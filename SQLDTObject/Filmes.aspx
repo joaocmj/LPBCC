@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <link href="Content/bootstrap.css" rel="stylesheet" />
+
 <%--<link href="Content/bootstrap-theme.min.css" rel="stylesheet" />--%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -57,7 +58,7 @@
         <table class="auto-style2">
             <tr>
                 <td colspan="6"><span class="auto-style1">
-                    <asp:GridView ID="grvFilmes" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id" ForeColor="#333333" HorizontalAlign="Center">
+                    <asp:GridView ID="grvFilmes" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id" ForeColor="#333333" HorizontalAlign="Center" OnPageIndexChanging="grvFilmes_PageIndexChanging" OnRowCommand="grvFilmes_RowCommand" PageSize="5">
                         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                         <Columns>
                             <asp:BoundField DataField="id" HeaderText="ID" />
@@ -65,6 +66,7 @@
                             <asp:BoundField DataField="genero" HeaderText="Genero" />
                             <asp:BoundField DataField="quantidade" DataFormatString="{0:N2}" HeaderText="Quantidade" />
                             <asp:BoundField DataField="valor" DataFormatString="{0:C2}" HeaderText="Valor" />
+                            <asp:ButtonField ButtonType="Button" CommandName="Select" Text="Selecionar" />
                         </Columns>
                         <EditRowStyle BackColor="#999999" />
                         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -127,19 +129,19 @@
             </tr>
             <tr>
                 <td class="auto-style11">
-                    <asp:Button ID="btnInserir" runat="server" CssClass="btn-primary" Text="Inserir" />
+                    <asp:Button ID="btnInserir" runat="server" CssClass="btn-primary" Text="Inserir" OnClick="btnInserir_Click" />
                 </td>
                 <td class="auto-style12">
-                    <asp:Button ID="btnEditar" runat="server" CssClass="btn-primary" Text="Editar" />
+                    <asp:Button ID="btnEditar" runat="server" CssClass="btn-primary" Text="Editar" OnClick="btnEditar_Click" />
                 </td>
                 <td class="auto-style8">
-                    <asp:Button ID="btnRemover" runat="server" CssClass="btn-danger" Text="Remover" Width="155px" />
+                    <asp:Button ID="btnRemover" runat="server" CssClass="btn-danger" Text="Remover" Width="155px" OnClick="btnRemover_Click" />
                 </td>
                 <td class="auto-style10"><strong>
-                    <asp:Button ID="btnGravar" runat="server" CssClass="btn-success" Text="Gravar" />
+                    <asp:Button ID="btnGravar" runat="server" CssClass="btn-success" Text="Gravar" OnClick="btnGravar_Click" />
                     </strong></td>
                 <td class="auto-style13">
-                    <asp:Button ID="btnCancelar" runat="server" CssClass="btn-danger" Text="Cancelar" />
+                    <asp:Button ID="btnCancelar" runat="server" CssClass="btn-danger" Text="Cancelar" OnClick="btnCancelar_Click" />
                 </td>
                 <td class="auto-style6">&nbsp;</td>
             </tr>
